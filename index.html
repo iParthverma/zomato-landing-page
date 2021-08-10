@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="./assets/logo.png" alt="logo" class="brand_logo">
+            </div>
+            <div class="navbar-nav-items">
+                <div class="nav-item">
+                    <button class="button-primary">Order Food</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero-container">
+            <div class="hero-image-container">
+                <img src="./assets/hero.jpg" alt="Hero image" class="hero-image">
+                <img src="./assets/svg/heroShape.svg" alt="Hero image shape" class="hero-image-shape">
+                <img src="./assets/svg/herobgpattren.svg" alt="Hero image pattern" class="hero-image-pattern">
+            </div>
+            <div class="hero-description">
+                <h1 class="text-heading">Order Food From Favourite Restaurants Near You.</h1>
+                <button class="button-primary">Order Now</button>
+            </div>
+        </section>
+
+        <section class="video-footage-container">
+            
+            <div class="video-footage">
+                <iframe 
+                    src="https://player.vimeo.com/video/44790197?color=ffffff&title=0&byline=0&portrait=0" 
+                    width="640" 
+                    height="360" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen
+                    class="chef-video">
+                </iframe>
+            </div>
+            
+            <div class="video-footage-text">
+                <p>Your food will be prepared safely with an experienced chef, without compromising ont he quality and hygiene.</p>
+            </div>
+        </section>
+
+        <section class="food-list-container">
+            <h1 class="text-heading" style="text-align: center;">Explore Our Menu</h1>
+
+            <div class="food-list-container-diagnol">
+
+            </div>
+
+            <div class="food-menu-card-list">
+
+                <div class="food-menu-card">
+                    <img src="./assets/burger.jpg" alt="Burger" class="food-menu-card-image">
+                    <div class="food-menu-card-description">
+                        <h4 class="food-menu-card-title">BURGERS</h4>
+                        <p class="food-menu-card-restaurants">Burger King, McDonald's, Burger Place <span style="color: red;"> +3 </span></p>
+                    </div>
+                </div>
+
+                <div class="food-menu-card">
+                    <img src="./assets/pizza.jpg" alt="Pizza" class="food-menu-card-image">
+                    <div class="food-menu-card-description">
+                        <h4 class="food-menu-card-title">PIZZA</h4>
+                        <p class="food-menu-card-restaurants">Pizza Hut, Domino's Pizza <span style="color: red;"> +3 </span></p>
+                    </div>
+                </div>
+
+                <div class="food-menu-card">
+                    <img src="./assets/iceCream.jpg" alt="Ice Cream" class="food-menu-card-image">
+                    <div class="food-menu-card-description">
+                        <h4 class="food-menu-card-title">ICE CREAM</h4>
+                        <p class="food-menu-card-restaurants">Baskin Robins, Ibaco <span style="color: red;"> +3 </span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="food-list-view">View More</button>
+        </section>
+
+        <section class="restaurant-list-container">
+            <div class="restaurant-list-text">
+                <h1 class="text-heading">Order from 100s of Restaurants.</h1>
+            </div>
+            <div class="restaurant-list-image-container">
+                <div class="restaurant-list-row-1">
+                    <img src="./assets/restaurant1.jpg" alt="Restaurant 1" class="restaurant1">
+                    <img src="./assets/restaurant2.jpg" alt="Restaurant 2" class="restaurant2">
+                </div>
+                <div class="restaurant-list-row-2">
+                    <img src="./assets/restaurant3.jpg" alt="Restaurant 3" class="restaurant3">
+                    <img src="./assets/restaurant4.jpg" alt="Restaurant 4" class="restaurant4">
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-container">
+            <div>
+                <h1 class="text-heading-update">Stay Updated</h1>
+                <div class="subscribe-input-field">
+                    <div class="input-field">
+                        <input class="email-input" type="email" placeholder="email@email.com">
+                    </div>
+                    <button class="button-primary">Get Updates</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-container">
+            <div class="quote-image-overlay"></div>
+                <center>
+                    <h3 class="quote-image-text">When a man's stomach is full it makes no difference whether he is poor or rich !</h3>
+                </center>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./assets/logo.png" alt logo>
+        <ul>
+            <li>Pricing</li>
+            <li>Terms and conditions</li>
+            <li>Partnership</li>
+            <li>Career</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburgermenu = document.getElementById("hamburgermenu");
+        const mobileNavDropDown = document.querySelector(
+          ".mobile__navbar__items"
+        );
+        window.addEventListener("click", () => {
+          if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+            return mobileNavDropDown.classList.remove("hamburger__menu__close");
+          return mobileNavDropDown.classList.add("hamburger__menu__close");
+        });
+    </script>
+
+</body>
+</html>
